@@ -6,11 +6,11 @@ catalyst_center:
       - name: Guest
       - name: Printers
       - name: Campus
-    transits:
-      - name: SDA-TRANSIT
-        type: SDA_LISP_PUB_SUB_TRANSIT
-        control_plane_devices:
-          - Transit-CP-1.cisco.eu
+    # transits:
+    #   - name: SDA-TRANSIT
+    #     type: SDA_LISP_PUB_SUB_TRANSIT
+    #     control_plane_devices:
+    #       - Transit-CP-1.cisco.eu
     fabric_sites:
       - name: Global/Poland/Warsaw
         authentication_template:
