@@ -26,19 +26,19 @@ catalyst_center:
           - Printers
           - Campus
         anycast_gateways:
-          - name: CampusVN2-IPPool
+          - ip_pool_name: CampusVN2-IPPool
             auto_generate_vlan_name: true
             traffic_type: DATA
             l3_virtual_network: Campus
-          - name: GuestVN2-IPPool
+          - ip_pool_name: GuestVN2-IPPool
             auto_generate_vlan_name: true
             traffic_type: DATA
             l3_virtual_network: Guest
-          - name: BYOD2-IPPool
+          - ip_pool_name: BYOD2-IPPool
             auto_generate_vlan_name: true
             traffic_type: DATA
             l3_virtual_network: BYOD
-          - name: PrintersVN2-IPPool
+          - ip_pool_name: PrintersVN2-IPPool
             auto_generate_vlan_name: true
             traffic_type: DATA
             l3_virtual_network: Printers
@@ -49,4 +49,4 @@ catalyst_center:
         default_exit: true
         import_external_routes: false
         local_autonomous_system_number: 65001
-        sda_transit: SDA-TRANSIT
+        # sda_transit: SDA-TRANSIT
