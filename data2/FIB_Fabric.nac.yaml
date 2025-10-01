@@ -10,7 +10,7 @@ catalyst_center:
     #   - name: SDA-TRANSIT
     #     type: SDA_LISP_PUB_SUB_TRANSIT
     #     control_plane_devices:
-    #       - Transit-CP-1.cisco.eu
+    #       - Transit-CP-1
     fabric_sites:
       - name: Global/Poland/Warsaw
         authentication_template:
@@ -43,10 +43,10 @@ catalyst_center:
             traffic_type: DATA
             l3_virtual_network: Printers
     border_devices:
-      - name: FIAB.cisco.eu
+      - name: FIAB
         border_types:
           - LAYER_3
         default_exit: true
         import_external_routes: false
         local_autonomous_system_number: 65001
-        # sda_transit: SDA-TRANSIT
+        #sda_transit: SDA-TRANSIT

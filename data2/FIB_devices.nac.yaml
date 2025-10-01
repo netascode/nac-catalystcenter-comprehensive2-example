@@ -2,7 +2,7 @@
 catalyst_center:
   inventory:
     devices:
-      - name: FIAB.cisco.eu
+      - name: FIAB
         fqdn_name: FIAB.cisco.eu
         device_ip: 181.1.1.1
         pid: C9KV-UADP-8P
@@ -19,14 +19,14 @@ catalyst_center:
             connected_device_type: "USER_DEVICE"
             data_vlan_name: "192_168_200_0-Campus"
             authenticate_template_name: "No Authentication"
-      - name: Transit-CP-1.cisco.eu
+      - name: Transit-CP-1
         fqdn_name: Transit-CP-1.cisco.eu
         device_ip: 190.1.1.1
         pid: C8000V
         state: INIT
         device_role: BORDER ROUTER
         site: Global/Poland/Warsaw/Bld_B
-      - name: C9800-CL-WLC.cisco.eu
+      - name: C9800-CL-WLC
         fqdn_name: C9800-CL-WLC.cisco.eu
         device_ip: 181.1.1.13
         serial_number: 9TQU20TYGKH
@@ -39,7 +39,7 @@ catalyst_center:
         dayn_templates:
           regular:
             - name: WLC_wlan_policy
-              state: DEPLOY
+              redeploy_template: NEVER
               variables:
                 - name: wlan_policy_name
                   value: dot1x-policy
